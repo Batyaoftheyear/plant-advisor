@@ -1,0 +1,12 @@
+# Local Python environments
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env
+# Runtime products; committed baseline results are preserved separately
+results/reproduced/
+# Model checkpoints
+checkpoints/
+*.safetensors
+# Temporary archives
+*.zip
