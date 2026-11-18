@@ -1,0 +1,51 @@
+# Python environments, bytecode and notebook checkpoints
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local caches and credentials
+.cache/
+.huggingface/
+.hf_home/
+.env
+.env.*
+!.env.example
+
+# Model weights and training checkpoints
+checkpoints/
+weights/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+*.h5
+*.hdf5
+
+# Downloaded archives, temporary files and editor/OS files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tmp
+*.temp
+*.part
+*.log
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep experiment JSONL, CSV, PNG, JSON and the executed notebook.
+# Do not ignore data/ or results/.

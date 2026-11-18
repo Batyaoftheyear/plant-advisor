@@ -1,0 +1,9 @@
+# Preserve original experiment and notebook bytes, including line endings.
+data/** -text
+results/** -text
+notebooks/*.ipynb -text
+
+# Use consistent line endings for repository documentation and Git rules.
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
