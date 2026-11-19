@@ -1,0 +1,27 @@
+{
+  "dataset_kind": "synthetic, curated, template-based",
+  "total_examples": 400,
+  "train_examples": 360,
+  "validation_examples": 40,
+  "task_counts": {
+    "train": {
+      "care": 180,
+      "diagnosis": 180
+    },
+    "validation": {
+      "care": 20,
+      "diagnosis": 20
+    }
+  },
+  "plant_count": 25,
+  "scenario_count": 24,
+  "format_errors": 0,
+  "exact_eval_overlaps": 0,
+  "high_similarity_pairs_threshold_0_85": 0,
+  "validation_method": "holdout of case types: vacation and pale_growth",
+  "limitations": [
+    "Synthetic examples are not an expert-verified gold standard.",
+    "The fact references describe general growing principles, not proof for every sentence.",
+    "Template reuse can reduce linguistic diversity."
+  ]
+}

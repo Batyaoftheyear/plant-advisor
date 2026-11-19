@@ -1,0 +1,5 @@
+split,task,count
+train,care,180
+train,diagnosis,180
+validation,care,20
+validation,diagnosis,20
