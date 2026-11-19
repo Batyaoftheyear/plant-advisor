@@ -1,0 +1,9 @@
+doc_id,status,task,attempts,evidence_chars,evidence_exact_source_match,question_in_current_sft
+wiki_dracaena_trifasciata_varieties_and_cultivars_0,skip,,1,,,False
+stackexchange_3039,ok,care,1,80,True,False
+stackexchange_181,ok,care,1,118,True,False
+stackexchange_1463,ok,diagnosis,1,69,False,False
+stackexchange_1199,ok,care,1,166,True,False
+stackexchange_5097,ok,diagnosis,1,139,True,False
+wiki_tillandsia_description_0,skip,,1,,,False
+stackexchange_4578,ok,diagnosis,1,199,True,False

@@ -1,0 +1,92 @@
+{
+  "origin": "Google Drive: plant-advisor/results/dataset",
+  "retrieved_on": "2026-11-19",
+  "original_artifacts": [
+    {
+      "name": "dataset_audit.json",
+      "size": 745,
+      "sha256": "7945b27dffe069aaf14dbe70a2d9fc89913fa26d643414b89da66e46097e58b6",
+      "modified_time": "2026-11-19T11:14:51.723Z",
+      "published_path": "results/dataset/dataset_audit.json"
+    },
+    {
+      "name": "dataset_distributions.png",
+      "size": 48908,
+      "sha256": "dded9e0ac38a6e8275bdb283622f5105feb1de71bcc41a43bddedadcbb3886de",
+      "modified_time": "2026-11-19T11:14:00.595Z",
+      "published_path": "results/dataset/dataset_distributions.png"
+    },
+    {
+      "name": "eval_similarity_audit.csv",
+      "size": 117717,
+      "sha256": "31715dd3176a3827133490a80ef5cbab61d92f8f392911bff80fc910205ca8a5",
+      "modified_time": "2026-11-19T11:14:21.185Z",
+      "published_path": "results/dataset/eval_similarity_audit.csv"
+    },
+    {
+      "name": "generated_candidates.jsonl",
+      "size": 12426,
+      "sha256": "82a0d325cd8bd652a8b4edb0361a8932847637fdc672674c81d9663df13e65cf",
+      "modified_time": "2026-11-18T22:02:38.549Z",
+      "published_path": "results/dataset/pilot_generation/generated_candidates.jsonl"
+    },
+    {
+      "name": "generation_config.json",
+      "size": 3061,
+      "sha256": "0ad1c4b76a0fdc567934a3dfee26723f9f628d94a00cf7c5587be6188f708c79",
+      "modified_time": "2026-11-18T21:35:52.143Z",
+      "published_path": "results/dataset/pilot_generation/generation_config.json"
+    },
+    {
+      "name": "manual_review_sample.csv",
+      "size": 31894,
+      "sha256": "705ae30aadc2fa866a16eac6c2be46516d856ace6d6009984c94c43b09e72ce9",
+      "modified_time": "2026-11-19T11:14:32.154Z",
+      "published_path": "results/dataset/manual_review_sample.csv"
+    },
+    {
+      "name": "pilot_examples.csv",
+      "size": 5248,
+      "sha256": "e53e7d15189bee6ded852c4d44c8f19e51263be8e93d69f895911c4802bb511e",
+      "modified_time": "2026-11-18T22:02:32.751Z",
+      "published_path": "results/dataset/pilot_generation/pilot_examples.csv"
+    },
+    {
+      "name": "selected_sources.jsonl",
+      "size": 1279943,
+      "sha256": "93ad11c219e25d60d9799bdc46bbdf9dc47b92d756b3f307e35df69f0c5df4c7",
+      "modified_time": "2026-11-18T21:34:03.768Z",
+      "published_path": null,
+      "note": "Downloaded for verification; the repository contains an index with source metadata and passage hashes, without the full source texts."
+    },
+    {
+      "name": "source_distribution.png",
+      "size": 73542,
+      "sha256": "af048ad7a73b79897bdbfa4b0b343041d27fdc9e9babd308880af2872a966cfe",
+      "modified_time": "2026-11-18T21:33:36.624Z",
+      "published_path": null,
+      "note": "Downloaded for review; plotted counts do not describe the 681 selected sources or the current 400 SFT examples, so the image is not published as their distribution."
+    },
+    {
+      "name": "split_distribution.csv",
+      "size": 95,
+      "sha256": "a08f6bdaeb7b41157448bef28495c91f5e67f36f4010b2b8bdb1dea4b52d5887",
+      "modified_time": "2026-11-19T11:14:52.385Z",
+      "published_path": "results/dataset/split_distribution.csv"
+    }
+  ],
+  "derived_artifacts": [
+    {
+      "path": "results/dataset/pilot_generation/selected_sources_index.csv",
+      "description": "681 source metadata records and SHA-256 hashes of the original passage_text fields; no full passage text.",
+      "size": 143322,
+      "sha256": "9bb5a0c9062f9c23e0efea83c813bef9fdddb5e8ac840bd64e3163c58c0cf3bb"
+    },
+    {
+      "path": "results/dataset/pilot_generation/pilot_audit.csv",
+      "description": "Checks of 8 parsed pilot responses: status, evidence match against selected_sources.jsonl, and overlap with current SFT questions.",
+      "size": 495,
+      "sha256": "48d5ca70e8cb0cba5d3638b1a7d0c673ab5227b87d2fc2170658063b2c116053"
+    }
+  ]
+}
