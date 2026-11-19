@@ -1,0 +1,6 @@
+index,id,task,delta_factual_correctness,factual_correctness_baseline,factual_correctness_sft
+2,q03,care,-1,5,4
+10,q11,care,-1,5,4
+16,q17,care,-1,5,4
+23,q25,care,-1,5,4
+28,q30,diagnosis,-1,5,4

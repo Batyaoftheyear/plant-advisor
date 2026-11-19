@@ -1,0 +1,12 @@
+index,0
+dataset_version,v3
+github_commit,8656ff198578eb05cee4aae0a06048b0be83ebcf
+n_questions,30
+n_judged_baseline,29
+n_judged_sft,30
+n_paired,29
+fpr_baseline,0.733333
+fpr_sft,1.0
+fpr_delta,0.266667
+judge_run_id,d88b49509b9a8ef1
+training_config_sha256,2e761291d9e376f78cc82b7bf7fdeaa70781bbde9acdff...

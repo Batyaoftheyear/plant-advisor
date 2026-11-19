@@ -1,0 +1,100 @@
+{
+  "origin": "saved notebook outputs; not the missing original Drive files",
+  "source_notebook": "notebooks/03_training_and_evaluation_v3.ipynb",
+  "source_notebook_sha256": "63fdb3fe2925bb6db90f2c12fb2c7d9f639994e94ec520c4c6ebb576d77ef881",
+  "output_payload_sha256": "60751fee72b9ecc8d24a02bb5b26c960fb0de9c9ec5e32f4c9160c101fa787e8",
+  "note": "CSV retains rendered display precision. Logs may be excerpts. No missing JSONL, judge explanations, or model weights were reconstructed.",
+  "files": [
+    {
+      "path": "results/sft/qwen25_3b_qlora_dataset_v3/notebook_training_progress.csv",
+      "source_cell": 11,
+      "kind": "rendered_table; original display precision",
+      "size": 161,
+      "sha256": "1040dda8555f9bcb1b87f09b6e46dd121e238def595e835278d1d8e08a0c77c2"
+    },
+    {
+      "path": "results/sft/qwen25_3b_qlora_dataset_v3/notebook_training_log_excerpt.csv",
+      "source_cell": 13,
+      "kind": "rendered_table; original display precision",
+      "size": 1139,
+      "sha256": "4b5aab9354a6699c811fc90d603f298a91fa029f100de255fc2ee2925b828a79"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_format_overall.csv",
+      "source_cell": 17,
+      "kind": "rendered_table; original display precision",
+      "size": 53,
+      "sha256": "88d9861f9768e928c9af8b2706aacebce53671eb1e779caabe7155158aa81afa"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_format_by_task.csv",
+      "source_cell": 17,
+      "kind": "rendered_table; original display precision",
+      "size": 168,
+      "sha256": "fc0849e5685d786d7fb514f1c8420214e1f7fc40723555591472aef2e4fdbb82"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_summary.csv",
+      "source_cell": 24,
+      "kind": "rendered_table; original display precision",
+      "size": 302,
+      "sha256": "d3c773fb882a4ee9388dc7f0d5da9db023b9ee1b2b27c56b12b243dfbba9b3a6"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_comparison_by_task.csv",
+      "source_cell": 24,
+      "kind": "rendered_table; original display precision",
+      "size": 515,
+      "sha256": "4e649038d0366d6e09b195ed8f09722f0e01dee7487571de4bf3c36dbb6aaf5f"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_declines.csv",
+      "source_cell": 24,
+      "kind": "rendered_table; original display precision",
+      "size": 192,
+      "sha256": "642712eac69d86d51c8fce725eb1be33c6ce1cad7a9ba266ce25af479e7b8a3a"
+    },
+    {
+      "path": "results/sft/qwen25_3b_qlora_dataset_v3/loss_curves_notebook.png",
+      "source_cell": 13,
+      "kind": "exact embedded PNG bytes",
+      "size": 41522,
+      "sha256": "1dc857087cc970e9b602d8f03447a5e01cc0783bc3cf0a1492d0e55066ba7dc0"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/baseline_vs_sft_notebook.png",
+      "source_cell": 24,
+      "kind": "exact embedded PNG bytes",
+      "size": 31731,
+      "sha256": "e70efda193db7aaf1dd923cd13b86a4c0f282140d9d1dc68b93c8e876fd71402"
+    },
+    {
+      "path": "results/sft/qwen25_3b_qlora_dataset_v3/notebook_training_log.txt",
+      "source_cell": 11,
+      "kind": "saved output stream",
+      "size": 3143,
+      "sha256": "02a7f3bb80014ac31f65f15ed1abb2d3fab889b22f11f774b345b67ffc78c773"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_generation_log.txt",
+      "source_cell": 15,
+      "kind": "saved output stream",
+      "size": 1925,
+      "sha256": "2774faa738e651bc269bc8a2a4738ea15b2133432e1493d42c71e80c4091e6f2"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_judge_log.txt",
+      "source_cell": 21,
+      "kind": "saved output stream",
+      "size": 5213,
+      "sha256": "6134781b7d40333a59991825912f130d3a639d7e5cf39fe0f6b8a1661e3d5662"
+    },
+    {
+      "path": "results/evaluation/qlora_dataset_v3/notebook_answer_examples.txt",
+      "source_cell": 23,
+      "kind": "saved output stream",
+      "size": 36831,
+      "sha256": "93eee099cbe8f305b5060faa7111aa38299531d9a3cf65f5d1aa1ce55826dfe4"
+    }
+  ]
+}

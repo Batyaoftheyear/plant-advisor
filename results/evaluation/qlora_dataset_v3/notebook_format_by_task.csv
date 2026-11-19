@@ -1,0 +1,5 @@
+index,model,task,n,fpr,hit_token_limit_rate
+0,baseline,care,15,0.867,0.067
+1,baseline,diagnosis,15,0.600,0.067
+2,sft,care,15,1.000,0.000
+3,sft,diagnosis,15,1.000,0.000

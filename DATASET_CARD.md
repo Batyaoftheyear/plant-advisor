@@ -1,4 +1,6 @@
-# PlantAdvisor SFT dataset
+# PlantAdvisor SFT v2
+
+Описание предыдущей версии данных. Актуальная карточка v3: [docs/v3/DATASET_CARD.md](docs/v3/DATASET_CARD.md).
 
 ## Назначение
 
