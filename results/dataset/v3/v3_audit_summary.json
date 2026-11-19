@@ -1,0 +1,31 @@
+{
+  "dataset_version": "v3",
+  "total_examples": 400,
+  "train_examples": 360,
+  "validation_examples": 40,
+  "task_counts": {
+    "diagnosis": 200,
+    "care": 200
+  },
+  "plant_count": 25,
+  "scenario_families_total": 141,
+  "scenario_families_train": 132,
+  "scenario_families_validation": 9,
+  "unique_questions": 400,
+  "unique_answers": 400,
+  "exact_eval_overlap_count": 0,
+  "train_validation_scenario_overlap_count": 0,
+  "validation_families": [
+    "care/air_conditioner",
+    "care/cachepot",
+    "care/calendar_watering",
+    "care/cold_sill",
+    "care/fertilize_in_dark",
+    "diagnosis/cold_brown",
+    "diagnosis/leaf_curl",
+    "diagnosis/leaf_dust",
+    "diagnosis/lower_yellow"
+  ],
+  "expert_review": "not_performed",
+  "sources_are": "topical not individually validating each example"
+}

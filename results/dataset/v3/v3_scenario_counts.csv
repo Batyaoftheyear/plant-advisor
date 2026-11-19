@@ -1,0 +1,142 @@
+task,scenario,train,validation
+care,air_conditioner,0,4
+care,cachepot,0,4
+care,calendar_watering,0,4
+care,cold_sill,0,4
+care,compact_soil,3,0
+care,fertilize_in_dark,0,4
+care,fertilizer_half,4,0
+care,finger_test,4,0
+care,heat_wave,4,0
+care,heater_draft,4,0
+care,humidity_meter,4,0
+care,hydrophobic_soil,4,0
+care,inspect_leaves,4,0
+care,leaf_damage,4,0
+care,led_lamp,4,0
+care,light_heat,4,0
+care,misting,4,0
+care,move_to_balcony,4,0
+care,no_drain,4,0
+care,no_window,4,0
+care,old_leaf,4,0
+care,oversized_pot,4,0
+care,plant_groups,4,0
+care,pot_surface_moss,4,0
+care,pot_weight,4,0
+care,quarantine,4,0
+care,repot_after_purchase,4,0
+care,repot_aftercare,4,0
+care,repot_root_signs,4,0
+care,rotate_pot,4,0
+care,salt_crust,4,0
+care,saucer,4,0
+care,seasonal_routine,4,0
+care,sheer_curtain,4,0
+care,species_аглаонема,1,0
+care,species_алоэ,1,0
+care,species_антуриум,1,0
+care,species_диффенбахия,1,0
+care,species_драцена маргината,1,0
+care,species_замиокулькас,1,0
+care,species_калатея,1,0
+care,species_комнатный плющ,1,0
+care,species_монстера,1,0
+care,species_пеларгония,1,0
+care,species_пеперомия,1,0
+care,species_пилея пеперомиевидная,1,0
+care,species_пустынный кактус,1,0
+care,species_сансевиерия,1,0
+care,species_спатифиллум,1,0
+care,species_толстянка,1,0
+care,species_традесканция,1,0
+care,species_фаленопсис,1,0
+care,species_фикус Бенджамина,1,0
+care,species_фикус каучуконосный,1,0
+care,species_филодендрон сердцелистный,1,0
+care,species_хлорофитум,1,0
+care,species_хойя,1,0
+care,species_шеффлера,1,0
+care,species_эпипремнум,1,0
+care,spring_change,4,0
+care,vacation_week,4,0
+care,wash_dust,4,0
+care,water_hardness,4,0
+care,watering_twice,4,0
+care,window_distance,4,0
+care,winter_feed,4,0
+care,winter_interval,4,0
+care,winter_radiator,4,0
+care,winter_window,4,0
+diagnosis,after_leaf_clean,4,0
+diagnosis,brown_margins,4,0
+diagnosis,buds_drop,3,0
+diagnosis,cactus_chill,1,0
+diagnosis,cactus_corking,1,0
+diagnosis,cactus_scales,1,0
+diagnosis,cactus_shrivel,1,0
+diagnosis,cactus_soggy,1,0
+diagnosis,cactus_spot_spread,1,0
+diagnosis,cactus_sunburn,1,0
+diagnosis,cold_brown,0,5
+diagnosis,corky_bumps,4,0
+diagnosis,cotton_pests,4,0
+diagnosis,crispy_heat,4,0
+diagnosis,edema_dots,4,0
+diagnosis,fading_variegation,4,0
+diagnosis,gnats_soil,4,0
+diagnosis,holes,4,0
+diagnosis,leaf_curl,0,5
+diagnosis,leaf_drop_week,4,0
+diagnosis,leaf_dust,0,5
+diagnosis,light_small,4,0
+diagnosis,lower_yellow,0,5
+diagnosis,new_leaf_stuck,4,0
+diagnosis,new_yellow,4,0
+diagnosis,no_flowers,2,0
+diagnosis,poor_drainage,4,0
+diagnosis,post_move,4,0
+diagnosis,salts_burn,4,0
+diagnosis,silver_scars,4,0
+diagnosis,soft_stem,4,0
+diagnosis,soil_dries_fast,4,0
+diagnosis,soil_mold,5,0
+diagnosis,species_аглаонема,1,0
+diagnosis,species_алоэ,1,0
+diagnosis,species_антуриум,1,0
+diagnosis,species_диффенбахия,1,0
+diagnosis,species_драцена маргината,1,0
+diagnosis,species_замиокулькас,1,0
+diagnosis,species_калатея,1,0
+diagnosis,species_комнатный плющ,1,0
+diagnosis,species_монстера,1,0
+diagnosis,species_пеларгония,1,0
+diagnosis,species_пеперомия,1,0
+diagnosis,species_пилея пеперомиевидная,1,0
+diagnosis,species_пустынный кактус,1,0
+diagnosis,species_сансевиерия,1,0
+diagnosis,species_спатифиллум,1,0
+diagnosis,species_толстянка,1,0
+diagnosis,species_традесканция,1,0
+diagnosis,species_фаленопсис,1,0
+diagnosis,species_фикус Бенджамина,1,0
+diagnosis,species_фикус каучуконосный,1,0
+diagnosis,species_филодендрон сердцелистный,1,0
+diagnosis,species_хлорофитум,1,0
+diagnosis,species_хойя,1,0
+diagnosis,species_шеффлера,1,0
+diagnosis,species_эпипремнум,1,0
+diagnosis,spots_after_fertilizer,5,0
+diagnosis,stem_bend,5,0
+diagnosis,sticky_after_spray,5,0
+diagnosis,sticky_leaf,4,0
+diagnosis,sudden_pale,4,0
+diagnosis,sun_spots,4,0
+diagnosis,water_soaked_spot,4,0
+diagnosis,wet_base,4,0
+diagnosis,wet_smell,5,0
+diagnosis,white_patches,5,0
+diagnosis,white_residue,4,0
+diagnosis,wilt_after_repot,5,0
+diagnosis,wilt_unknown,4,0
+diagnosis,wilting_night,4,0

@@ -13,6 +13,8 @@ __pycache__/
 .cache/
 .huggingface/
 .hf_home/
+sync_backups/
+data/v3/sync_receipt.json
 .env
 .env.*
 !.env.example

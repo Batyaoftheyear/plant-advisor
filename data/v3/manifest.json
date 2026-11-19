@@ -1,0 +1,67 @@
+{
+  "manifest_version": 1,
+  "dataset_version": "v3",
+  "repository": "Batyaoftheyear/plant-advisor",
+  "files": [
+    {
+      "path": "data/eval_questions.jsonl",
+      "size": 5039,
+      "sha256": "d250630e177583dbf8167a8678a2f0b11af7d68e69acb1d9a9e616415305acd2"
+    },
+    {
+      "path": "data/v3/sft_metadata.jsonl",
+      "size": 590597,
+      "sha256": "9bc96b687694dfa6de53c47b447147acbacd592491bf351b26a97a7f04d2c3e7"
+    },
+    {
+      "path": "data/v3/sft_provenance.csv",
+      "size": 117660,
+      "sha256": "b166691313b4b404a9158afa0866e6acb5edf951bfbb1635ecf34d1eb99aa5b4"
+    },
+    {
+      "path": "data/v3/sources.csv",
+      "size": 3795,
+      "sha256": "7738c3ef807cd986c0b64d5485402578d4dd4295abbd3537d061ebc299e5a2fd"
+    },
+    {
+      "path": "data/v3/train.jsonl",
+      "size": 372821,
+      "sha256": "41587356c6441a65fd40181f955961f34cfb1d32864f38b5e77ad287913d216e"
+    },
+    {
+      "path": "data/v3/validation.jsonl",
+      "size": 42296,
+      "sha256": "7f1361a92d4996cb32beb30e0822edbd127e24d562e0f0f0cbae1f7179c0b2d4"
+    },
+    {
+      "path": "results/baseline/qwen25_3b_512/baseline_answers.jsonl",
+      "size": 66261,
+      "sha256": "6224584a14d66503ae2016109674d530b79e7b736284261beee11e3bf6776813"
+    },
+    {
+      "path": "results/baseline/qwen25_3b_512/config.json",
+      "size": 1547,
+      "sha256": "cdb92a284e6987fd9376fa80ff8c4d95a9ab1f349e302a8482ca68e38177c510"
+    },
+    {
+      "path": "results/dataset/v3/manual_review_v3.csv",
+      "size": 35929,
+      "sha256": "b4106ff83d5f0ed72b50f2250ca2541c365bcba7881ce2b52819b48d92e345ab"
+    },
+    {
+      "path": "results/dataset/v3/v3_audit_summary.json",
+      "size": 808,
+      "sha256": "64ee98a6aec1413f51e427e1886e0b3f7c4971d12edd32220691522f40037650"
+    },
+    {
+      "path": "results/dataset/v3/v3_scenario_counts.csv",
+      "size": 4606,
+      "sha256": "15e0ba7dbe480b77bdea384c1a0e66f025bbb8cf3b87f79452a582c04f5fb094"
+    },
+    {
+      "path": "results/judge/qwen25_7b_baseline_v2/config.json",
+      "size": 3430,
+      "sha256": "0749033cb0dd18b8299f394d8f18830ea37528c4370c900158cc3280df8ca3f8"
+    }
+  ]
+}
