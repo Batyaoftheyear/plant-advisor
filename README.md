@@ -49,6 +49,16 @@ QLoRA: NF4, `r=16`, `alpha=32`, dropout `0.10`, 2 эпохи, LR `3e-5`, эфф�
 - `scripts/`, `tests/` — сборка, синхронизация, экспорт и проверки.
 - `docs/` — PDF и указатель подтверждающих материалов.
 
+В `scripts/` оставлены только рабочие инструменты:
+
+| Скрипт | Назначение |
+|---|---|
+| `build_sft_v3.py` | Сборка данных из сценариев и профилей растений; указан в PDF |
+| `audit_sft_v3.py` | Проверка схемы, уникальности и разделения выборок |
+| `sync_colab_data.py` | Загрузка проверенных входных файлов в Colab |
+| `update_v3_manifest.py` | Пересчёт контрольных сумм после намеренного изменения данных |
+| `export_submission_artifacts.py` | Сохранение весов, конфигураций, логов и оценок из Colab |
+
 ```bash
 python scripts/audit_sft_v3.py
 python scripts/sync_colab_data.py --project-root . --verify-local

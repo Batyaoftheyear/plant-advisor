@@ -44,6 +44,6 @@ python scripts/build_sft_v3.py
 python scripts/update_v3_manifest.py
 ```
 
-Сборщик пишет в `data/v3/` и `results/dataset/v3/`. Скрипт `scripts/export_notebook_evidence.py` извлекает таблицы, приведённые в PDF, из зафиксированной в его коде версии ноутбука в Git; он требует полной истории репозитория. Результаты такого экспорта уже опубликованы в каталогах без `_recovery`.
+Сборщик самодостаточен и пишет в `data/v3/` и `results/dataset/v3/`. Таблицы и графики, приведённые в PDF, опубликованы в каталогах без `_recovery`; их происхождение и ссылка на исходный ноутбук зафиксированы в `results/notebook_evidence_manifest.json`.
 
 Расхождения PDF с доступными материалами перечислены в [сверке артефактов](docs/REPORT_ARTIFACT_CHECK.md). PDF сохранён без изменений.
