@@ -1,0 +1,70 @@
+{
+  "best_global_step": 45,
+  "best_metric": 1.8348503112792969,
+  "best_model_checkpoint": "/content/drive/MyDrive/plant-advisor/results/sft/qwen25_3b_qlora_v2/checkpoints/checkpoint-45",
+  "epoch": 1.0,
+  "eval_steps": 500,
+  "global_step": 45,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.2222222222222222,
+      "grad_norm": 0.6109728813171387,
+      "learning_rate": 9.993977281025862e-05,
+      "loss": 1.8456,
+      "step": 10
+    },
+    {
+      "epoch": 0.4444444444444444,
+      "grad_norm": 0.8506953120231628,
+      "learning_rate": 9.784701678661045e-05,
+      "loss": 1.4103,
+      "step": 20
+    },
+    {
+      "epoch": 0.6666666666666666,
+      "grad_norm": 0.9446821212768555,
+      "learning_rate": 9.288643050001361e-05,
+      "loss": 1.0051,
+      "step": 30
+    },
+    {
+      "epoch": 0.8888888888888888,
+      "grad_norm": 1.171538233757019,
+      "learning_rate": 8.535533905932738e-05,
+      "loss": 0.6749,
+      "step": 40
+    },
+    {
+      "epoch": 1.0,
+      "eval_loss": 1.8348503112792969,
+      "eval_runtime": 12.9836,
+      "eval_samples_per_second": 3.081,
+      "eval_steps_per_second": 3.081,
+      "step": 45
+    }
+  ],
+  "logging_steps": 10,
+  "max_steps": 135,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 3,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 2715001568821248.0,
+  "train_batch_size": 1,
+  "trial_name": null,
+  "trial_params": null
+}

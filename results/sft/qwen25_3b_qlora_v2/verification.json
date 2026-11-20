@@ -1,0 +1,13 @@
+{
+  "origin": "Google Drive checkpoint-45 and trainer state at step 135",
+  "weights_sha256": "6c0fb10da0553b0aa24692a57dbd7971f9ec8e0ca2005cf9af64ce8174390363",
+  "weights_size": 119801528,
+  "tensor_count": 504,
+  "parameters": 29933568,
+  "finite_values_verified": true,
+  "training_input_hashes_verified": true,
+  "best_step": 45,
+  "best_eval_loss": 1.8348503112792969,
+  "final_training_step": 135,
+  "gpu_reload_test_performed": false
+}
