@@ -55,7 +55,7 @@
     "Training configuration, input hashes, best checkpoint and logs agree"
   ],
   "executed_notebook": {
-    "path": "notebooks/03_training_and_evaluation_v3.ipynb",
+    "path": "notebooks/03_training_and_evaluation.ipynb",
     "original_sha256": "79f23adafbe22257623405c8ef816ccf8e19cf8b784cb6be79fe7e953e5726c8",
     "output_count": 59,
     "code_cells_and_outputs_preserved": true,

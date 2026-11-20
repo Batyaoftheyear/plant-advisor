@@ -1,4 +1,4 @@
-# QLoRA на датасете v2
+# QLoRA: первый эксперимент
 
 Базовая модель: `Qwen/Qwen2.5-3B-Instruct`, ревизия `aa8e72537993ba99e69dfaafa59ed015b17504d1`. Данные: `data/train.jsonl` и `data/validation.jsonl`, 360/40 записей. Их SHA-256 совпадают с сохранённой конфигурацией обучения.
 

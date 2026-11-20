@@ -1,8 +1,8 @@
-# Запуск PlantAdvisor v3
+# Запуск PlantAdvisor
 
 ## Готовые результаты и веса
 
-[Ноутбук 03](notebooks/03_training_and_evaluation_v3.ipynb) содержит выполненное обучение на T4, 30 ответов SFT и парное сравнение с baseline. Все 59 выводов ячеек сохранены.
+[Ноутбук 03](notebooks/03_training_and_evaluation.ipynb) содержит выполненное обучение на T4, 30 ответов SFT и парное сравнение с baseline. Все 59 выводов ячеек сохранены.
 
 В [GitHub Release](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v3-reproduction) доступны `plant_advisor_v3_reproduction_complete.zip` и `SHA256SUMS.txt`. Архив содержит адаптер safetensors, токенизатор, данные, конфигурации, логи, ответы и оценки. Размер ZIP — 115 469 576 байт. [Метаданные публикации](results/reproduction_release.json).
 
@@ -16,7 +16,7 @@
 
 ## Обучение и оценка в Colab
 
-[Открыть ноутбук 03 в Google Colab](https://colab.research.google.com/github/Batyaoftheyear/plant-advisor/blob/main/notebooks/03_training_and_evaluation_v3.ipynb).
+[Открыть ноутбук 03 в Google Colab](https://colab.research.google.com/github/Batyaoftheyear/plant-advisor/blob/main/notebooks/03_training_and_evaluation.ipynb).
 
 1. Выберите T4 и выполните ячейки по порядку. Если установка библиотек потребует перезапуска, перезапустите среду и начните выполнение заново.
 2. В окне `drive.mount` разрешите подключение Google Drive. Публичные GitHub-данные и базовая модель доступны без токенов. Можно использовать пустой Google Drive: входные файлы загрузятся автоматически.
@@ -29,7 +29,7 @@
 
 ## Данные и аудит
 
-Синхронизация использует один SHA коммита и `data/v3/manifest.json`. Загружаются пять файлов v3, контрольные вопросы, конфигурация и ответы baseline, конфигурация судьи и три отчёта аудита. Совпадающие файлы не скачиваются повторно. При конфликте общих контрольных файлов выполнение останавливается; изменяемые файлы v3 предварительно сохраняются в резервную копию.
+Синхронизация использует один SHA коммита и `data/v3/manifest.json`. Загружаются пять файлов датасета, контрольные вопросы, конфигурация и ответы baseline, конфигурация судьи и три отчёта аудита. Совпадающие файлы не скачиваются повторно. При конфликте общих контрольных файлов выполнение останавливается; изменяемые файлы датасета предварительно сохраняются в резервную копию.
 
 ```bash
 python scripts/audit_sft_v3.py
@@ -37,13 +37,13 @@ python scripts/sync_colab_data.py --project-root . --verify-local
 python -m unittest discover -s tests -v
 ```
 
-Для намеренной пересборки v3:
+Для пересборки данных:
 
 ```bash
 python scripts/build_sft_v3.py
 python scripts/update_v3_manifest.py
 ```
 
-Сборщик пишет только в каталоги v3. Более ранние данные сохраняются. Скрипт `scripts/export_notebook_evidence.py` извлекает таблицы, приведённые в PDF, из зафиксированной в его коде версии ноутбука в Git; он требует полной истории репозитория. Результаты такого экспорта уже опубликованы в каталогах без `_recovery`.
+Сборщик пишет в `data/v3/` и `results/dataset/v3/`. Скрипт `scripts/export_notebook_evidence.py` извлекает таблицы, приведённые в PDF, из зафиксированной в его коде версии ноутбука в Git; он требует полной истории репозитория. Результаты такого экспорта уже опубликованы в каталогах без `_recovery`.
 
 Расхождения PDF с доступными материалами перечислены в [сверке артефактов](docs/REPORT_ARTIFACT_CHECK.md). PDF сохранён без изменений.
