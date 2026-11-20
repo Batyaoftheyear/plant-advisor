@@ -1,37 +1,34 @@
-# Артефакты первого этапа
+# Артефакты эксперимента
 
-## Код, данные и результаты
-
-| Материал | Расположение |
+| Материал | Файлы |
 |---|---|
-| PDF-отчёт без изменений | [report_rk1.pdf](report_rk1.pdf) |
-| Исходная модель, два пробных вопроса и проверка формата | [ноутбук 01](../notebooks/01_baseline_and_judge.ipynb) |
-| 30 baseline-ответов, конфигурация и график | [results/baseline/qwen25_3b_512](../results/baseline/qwen25_3b_512/) |
-| Оценки baseline: 29 успешных, исходные попытки и ошибка q16 | [results/judge/qwen25_7b_baseline_v2](../results/judge/qwen25_7b_baseline_v2/) |
-| Пилот PlantClinic: исходные кандидаты, источники и ошибки генерации | [pilot_generation](../results/dataset/pilot_generation/) |
-| Материалы подготовки данных | [data](../data/), [карточка датасета](../DATASET_CARD.md) |
-| Обучающие данные: 360 train / 40 validation, метаданные, источники | [data/v3](../data/v3/) |
-| Аудит данных, 141 семейство сценариев, форма просмотра | [results/dataset/v3](../results/dataset/v3/), [ноутбук проверки](../notebooks/02_dataset.ipynb) |
-| Сборка обучающего набора | [build_sft_v3.py](../scripts/build_sft_v3.py), включая справочник растений |
-| Первый эксперимент: конфигурация, журнал до шага 135 и лучший checkpoint-45 | [results/sft/qwen25_3b_qlora_v2](../results/sft/qwen25_3b_qlora_v2/) |
-| Обучение: выполненное обучение и оценка | [ноутбук 03](../notebooks/03_training_and_evaluation.ipynb) |
-| Обучение: конфигурация, loss, журнал и checkpoint | [results/sft/qwen25_3b_qlora_dataset_v3_recovery](../results/sft/qwen25_3b_qlora_dataset_v3_recovery/) |
-| 30 SFT-ответов, 29 оценок baseline и 30 SFT, исходные ответы судьи | [results/evaluation/qlora_dataset_v3_recovery](../results/evaluation/qlora_dataset_v3_recovery/) |
+| Отчёт | [report_rk1.pdf](report_rk1.pdf) |
+| Исходная модель и модель-судья | [ноутбук 01](../notebooks/01_baseline_and_judge.ipynb) |
+| Подготовка данных | [ноутбук 02](../notebooks/02_dataset.ipynb), [сборщик](../scripts/build_sft_v3.py), [карточка датасета](../DATASET_CARD.md) |
+| Обучение и итоговое сравнение | [ноутбук 03](../notebooks/03_training_and_evaluation.ipynb) |
+| Контрольные вопросы | [eval_questions.jsonl](../data/eval_questions.jsonl) |
+| Обучающие JSONL, метаданные и источники | [data/v3](../data/v3/) |
+| Проверки данных и форма ручного просмотра | [results/dataset/v3](../results/dataset/v3/) |
+| Пилот генерации по внешнему корпусу | [pilot_generation](../results/dataset/pilot_generation/) |
+| 30 ответов baseline, настройки и FPR | [results/baseline/qwen25_3b_512](../results/baseline/qwen25_3b_512/) |
+| Начальная оценка baseline: 29 результатов, пропуск q16 | [results/judge/qwen25_7b_baseline_v2](../results/judge/qwen25_7b_baseline_v2/) |
+| Первый эксперимент: конфигурация, журнал и checkpoint-45 | [results/sft/qwen25_3b_qlora_v2](../results/sft/qwen25_3b_qlora_v2/) |
+| Итоговое обучение: конфигурация, loss и checkpoint | [results/sft/qwen25_3b_qlora_dataset_v3_recovery](../results/sft/qwen25_3b_qlora_dataset_v3_recovery/) |
+| 30 SFT-ответов, 29 оценок baseline, 30 оценок SFT и исходные ответы судьи | [results/evaluation/qlora_dataset_v3_recovery](../results/evaluation/qlora_dataset_v3_recovery/) |
 | Примеры ухудшений с объяснениями судьи | [qualitative_examples.md](../results/evaluation/qlora_dataset_v3_recovery/qualitative_examples.md) |
-| Таблицы, графики и примеры, использованные в PDF | [оценка для отчёта](../results/evaluation/qlora_dataset_v3/), [обучение для отчёта](../results/sft/qwen25_3b_qlora_dataset_v3/) |
-| Сверка PDF и доступных файлов | [REPORT_ARTIFACT_CHECK.md](REPORT_ARTIFACT_CHECK.md) |
 
 ## Веса
 
-Веса, токенизаторы и конфигурации распространяются через GitHub Releases. После распаковки архивов сохраняются исходные пути внутри `results/sft/`. Ревизия базовой модели зафиксирована в `training_config.json`; инструкции загрузки — в [README_DATASET.md](../README_DATASET.md).
+- [Итоговый адаптер и полный комплект результатов](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v3-reproduction). [Адрес архива и SHA-256](../results/reproduction_release.json), [манифест файлов](../results/reproduction_artifacts_manifest.json).
+- [Адаптер checkpoint-45 первого эксперимента](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v2-checkpoint45). [Адрес архива и SHA-256](../results/sft/qwen25_3b_qlora_v2/release.json), [происхождение файлов](../results/sft/qwen25_3b_qlora_v2/drive_artifacts_manifest.json).
 
-- [Итоговый адаптер и полный комплект результатов](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v3-reproduction). [Метаданные публикации](../results/reproduction_release.json), [манифест 45 файлов](../results/reproduction_artifacts_manifest.json), [проверка целостности](../results/reproduction_verification.json).
-- [Адаптер checkpoint-45 первого эксперимента, токенизатор и журналы](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v2-checkpoint45). Оригиналы получены с Google Drive. [Метаданные публикации](../results/sft/qwen25_3b_qlora_v2/release.json), [происхождение и SHA-256](../results/sft/qwen25_3b_qlora_v2/drive_artifacts_manifest.json), [проверка](../results/sft/qwen25_3b_qlora_v2/verification.json).
+В архивах находятся адаптеры safetensors, конфигурации и токенизаторы. Базовая модель — `Qwen/Qwen2.5-3B-Instruct`; её ревизия указана в `training_config.json`. У каждого адаптера 504 тензора F32 и 29 933 568 параметров. [Инструкция загрузки и запуска](../README_DATASET.md).
 
-У обоих адаптеров по 504 тензора F32 и 29 933 568 параметров. Проверены структура safetensors, конечность значений и хеши входных данных. Отдельная проверочная загрузка на GPU при подготовке репозитория не выполнялась.
+## Наборы оценки
 
-## Происхождение таблиц PDF
+| ID оценки | Применимость SFT, 29 пар | Применимость по диагностике, 14 пар | Доступные материалы |
+|---|---:|---:|---|
+| `b2a7a9c6e1084a42` | 3,586 | 3,357 | [Полные JSONL, парные оценки и графики](../results/evaluation/qlora_dataset_v3_recovery/); адаптер в Releases |
+| `d88b49509b9a8ef1` | 3,552 | 3,286 | [Таблицы, графики и примеры](../results/evaluation/qlora_dataset_v3/); веса и полные JSONL недоступны |
 
-В PDF применимость SFT равна 3,552, а в полном опубликованном наборе оценок — 3,586. Эти результаты не объединяются. Таблицы PDF извлечены из сохранённых выводов; они имеют точность отображения исходного ноутбука. Их происхождение, SHA-256 и ссылка на зафиксированную версию ноутбука указаны в [манифесте экспорта](../results/notebook_evidence_manifest.json).
-
-В манифесте сохранена ссылка на исходную версию ноутбука в Git, поэтому переименование рабочего файла не меняет происхождение таблиц. Полные JSONL и адаптер именно для оценки 3,552 отсутствуют. Наличие другого адаптера не устраняет это ограничение.
+Оценки относятся к разным экспериментальным записям. Средние из разных записей не объединяются. Во второй строке таблицы значения извлечены из отображённых выводов ноутбука и имеют точность отображения; журналы являются выдержками, примеры — поднабором. Источник и SHA-256 указаны в [манифесте](../results/notebook_evidence_manifest.json).

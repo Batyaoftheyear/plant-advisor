@@ -15,7 +15,7 @@
     "layers": 36,
     "dtype": "F32",
     "finite_values_verified": true,
-    "gpu_reload_test_performed_by_repository_check": false
+    "independent_gpu_reload_test_performed": false
   },
   "evaluation": {
     "n_answers": 30,
@@ -53,12 +53,5 @@
     "All 59 successful judgments pass the original schema and match an original raw model response",
     "Paired and aggregated CSV metrics match individual judgments",
     "Training configuration, input hashes, best checkpoint and logs agree"
-  ],
-  "executed_notebook": {
-    "path": "notebooks/03_training_and_evaluation.ipynb",
-    "original_sha256": "79f23adafbe22257623405c8ef816ccf8e19cf8b784cb6be79fe7e953e5726c8",
-    "output_count": 59,
-    "code_cells_and_outputs_preserved": true,
-    "exported_archive_sha256_matches": true
-  }
+  ]
 }

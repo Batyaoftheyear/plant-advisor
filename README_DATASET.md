@@ -2,7 +2,7 @@
 
 ## Готовые результаты и веса
 
-[Ноутбук 03](notebooks/03_training_and_evaluation.ipynb) содержит выполненное обучение на T4, 30 ответов SFT и парное сравнение с baseline. Все 59 выводов ячеек сохранены.
+[Ноутбук 03](notebooks/03_training_and_evaluation.ipynb) содержит выполненное обучение на T4, 30 ответов SFT и парное сравнение с baseline.
 
 В [GitHub Release](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v3-reproduction) доступны `plant_advisor_v3_reproduction_complete.zip` и `SHA256SUMS.txt`. Архив содержит адаптер safetensors, токенизатор, данные, конфигурации, логи, ответы и оценки. Размер ZIP — 115 469 576 байт. [Метаданные публикации](results/reproduction_release.json).
 
@@ -44,6 +44,4 @@ python scripts/build_sft_v3.py
 python scripts/update_v3_manifest.py
 ```
 
-Сборщик самодостаточен и пишет в `data/v3/` и `results/dataset/v3/`. Таблицы и графики, приведённые в PDF, опубликованы в каталогах без `_recovery`; их происхождение и ссылка на исходный ноутбук зафиксированы в `results/notebook_evidence_manifest.json`.
-
-Расхождения PDF с доступными материалами перечислены в [сверке артефактов](docs/REPORT_ARTIFACT_CHECK.md). PDF сохранён без изменений.
+Сборщик записывает данные в `data/v3/`, отчёты аудита — в `results/dataset/v3/`. Происхождение дополнительных таблиц оценки указано в `results/notebook_evidence_manifest.json`.
