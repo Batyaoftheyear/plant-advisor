@@ -1,7 +1,7 @@
 {
   "origin": "saved notebook outputs; not the missing original Drive files",
   "source_notebook": "notebooks/03_training_and_evaluation_v3.ipynb",
-  "source_notebook_sha256": "63fdb3fe2925bb6db90f2c12fb2c7d9f639994e94ec520c4c6ebb576d77ef881",
+  "source_notebook_sha256": "fa48f4ca274b1220017b36e8f2a13ddc50d453ddd65a0da4daf108a83a38f3fe",
   "output_payload_sha256": "60751fee72b9ecc8d24a02bb5b26c960fb0de9c9ec5e32f4c9160c101fa787e8",
   "note": "CSV retains rendered display precision. Logs may be excerpts. No missing JSONL, judge explanations, or model weights were reconstructed.",
   "files": [

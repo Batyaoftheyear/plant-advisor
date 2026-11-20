@@ -1,0 +1,12 @@
+{
+  "repository": "Batyaoftheyear/plant-advisor",
+  "tag": "stage1-v3-reproduction",
+  "release_url": "https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v3-reproduction",
+  "archive_url": "https://github.com/Batyaoftheyear/plant-advisor/releases/download/stage1-v3-reproduction/plant_advisor_v3_reproduction_complete.zip",
+  "archive_name": "plant_advisor_v3_reproduction_complete.zip",
+  "archive_size": 115469576,
+  "archive_sha256": "9ed68385ac0b0ac3025c5f78f825354d31117fff6d0479fb1ec6eb471ebc0443",
+  "release_target_commit": "fd649b9cf1c40af498e333145cc792123f5e47dc",
+  "asset_digest": "sha256:9ed68385ac0b0ac3025c5f78f825354d31117fff6d0479fb1ec6eb471ebc0443",
+  "public_download_verified": true
+}
