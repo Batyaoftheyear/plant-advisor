@@ -1,0 +1,14 @@
+{
+  "dataset_version": "v3",
+  "training_config_sha256": "2e761291d9e376f78cc82b7bf7fdeaa70781bbde9acdff8dd3e73d6add0069cc",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "base_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "adapter_data_hash": "41587356c6441a65fd40181f955961f34cfb1d32864f38b5e77ad287913d216e",
+  "system_prompt_sha256": "c949675ac184421fd3d0ac2a17a59222b71594dd2eebecd47360cbf065c1334b",
+  "generation": {
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "num_beams": 1
+  },
+  "questions_sha256": "d250630e177583dbf8167a8678a2f0b11af7d68e69acb1d9a9e616415305acd2"
+}

@@ -1,0 +1,5 @@
+{
+  "best_checkpoint": "/content/plant-advisor-v3-reproduction/results/sft/qwen25_3b_qlora_dataset_v3_recovery/checkpoints/checkpoint-90",
+  "best_metric": 1.3437583446502686,
+  "global_step": 90
+}

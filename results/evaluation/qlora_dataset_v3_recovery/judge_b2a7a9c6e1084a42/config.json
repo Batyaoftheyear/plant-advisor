@@ -1,0 +1,10 @@
+{
+  "judge_model": "Qwen/Qwen2.5-7B-Instruct",
+  "judge_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "prompt_sha256": "d4b2af0698d2658313fcd631aa1ec9e1d7646e2a10ea9062761ac5738813b898",
+  "input_template": "task + explicit diagnostic constraints + question + answer v2",
+  "max_new_tokens": 640,
+  "do_sample": false,
+  "baseline_sha256": "6224584a14d66503ae2016109674d530b79e7b736284261beee11e3bf6776813",
+  "sft_sha256": "fb3d860c61cc76025f145129873443fc616e1c9d8708e2e3a4680efda14650d9"
+}

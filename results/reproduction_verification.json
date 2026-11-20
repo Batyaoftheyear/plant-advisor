@@ -1,0 +1,64 @@
+{
+  "archive_name": "plant_advisor_v3_reproduction_complete.zip",
+  "archive_sha256": "9ed68385ac0b0ac3025c5f78f825354d31117fff6d0479fb1ec6eb471ebc0443",
+  "archive_size": 115469576,
+  "manifest_files_verified": 45,
+  "crc_verified": true,
+  "all_sha256_verified": true,
+  "shared_inputs_match_repository": true,
+  "adapter": {
+    "path": "results/sft/qwen25_3b_qlora_dataset_v3_recovery/adapter/adapter_model.safetensors",
+    "size": 119801528,
+    "sha256": "0950433bdc891ce4242a70768454949b2f3ce6a0c2417571bf6c47142b65ae7b",
+    "tensor_count": 504,
+    "parameters": 29933568,
+    "layers": 36,
+    "dtype": "F32",
+    "finite_values_verified": true,
+    "gpu_reload_test_performed_by_repository_check": false
+  },
+  "evaluation": {
+    "n_answers": 30,
+    "n_paired": 29,
+    "missing_baseline_judgment": [
+      "q20"
+    ],
+    "judge_run_id": "b2a7a9c6e1084a42",
+    "coverage": {
+      "baseline": {
+        "scored": 29,
+        "raw_attempts": 36
+      },
+      "sft": {
+        "scored": 30,
+        "raw_attempts": 31
+      }
+    },
+    "fpr_baseline": 0.7333333333333333,
+    "fpr_sft": 1.0,
+    "factual_correctness_baseline": 4.413793103448276,
+    "factual_correctness_sft": 4.275862068965517,
+    "actionability_baseline": 4.0,
+    "actionability_sft": 3.586206896551724,
+    "factual_declines": [
+      "q03",
+      "q11",
+      "q17",
+      "q25",
+      "q30"
+    ]
+  },
+  "checks": [
+    "Original format checker matches all 60 saved format results",
+    "All 59 successful judgments pass the original schema and match an original raw model response",
+    "Paired and aggregated CSV metrics match individual judgments",
+    "Training configuration, input hashes, best checkpoint and logs agree"
+  ],
+  "executed_notebook": {
+    "path": "notebooks/04_reproduce_v3.ipynb",
+    "original_sha256": "79f23adafbe22257623405c8ef816ccf8e19cf8b784cb6be79fe7e953e5726c8",
+    "output_count": 59,
+    "code_cells_and_outputs_preserved": true,
+    "exported_archive_sha256_matches": true
+  }
+}

@@ -20,6 +20,9 @@ data/v3/sync_receipt.json
 !.env.example
 
 # Model weights and training checkpoints
+# The complete adapter/tokenizer bundle is distributed as a GitHub Release asset.
+/results/sft/qwen25_3b_qlora_dataset_v3_recovery/adapter/*
+!/results/sft/qwen25_3b_qlora_dataset_v3_recovery/adapter/adapter_config.json
 checkpoints/
 weights/
 models/

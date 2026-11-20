@@ -1,0 +1,4 @@
+subset,n_paired,factual_correctness_baseline,factual_correctness_sft,factual_correctness_delta,actionability_baseline,actionability_sft,actionability_delta,diagnostic_reasoning_baseline,diagnostic_reasoning_sft,diagnostic_reasoning_delta,critical_error_rate_baseline,critical_error_rate_sft
+all,29,4.413793103448276,4.275862068965517,-0.13793103448275862,4.0,3.586206896551724,-0.41379310344827586,3.357142857142857,3.0,-0.35714285714285715,0.0,0.0
+care,15,4.733333333333333,4.533333333333333,-0.2,4.133333333333334,3.8,-0.3333333333333333,,,,0.0,0.0
+diagnosis,14,4.071428571428571,4.0,-0.07142857142857142,3.857142857142857,3.357142857142857,-0.5,3.357142857142857,3.0,-0.35714285714285715,0.0,0.0

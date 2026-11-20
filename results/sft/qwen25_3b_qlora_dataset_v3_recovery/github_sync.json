@@ -1,0 +1,24 @@
+{
+  "dataset_version": "v3",
+  "repository": "Batyaoftheyear/plant-advisor",
+  "requested_revision": "a1aed795977b4e3a4ccc4015a2b32190c79e8911",
+  "github_commit": "a1aed795977b4e3a4ccc4015a2b32190c79e8911",
+  "synced_at_utc": "2026-11-20T10:57:11.206382+00:00",
+  "updated": [
+    "data/eval_questions.jsonl",
+    "data/v3/sft_metadata.jsonl",
+    "data/v3/sft_provenance.csv",
+    "data/v3/sources.csv",
+    "data/v3/train.jsonl",
+    "data/v3/validation.jsonl",
+    "results/baseline/qwen25_3b_512/baseline_answers.jsonl",
+    "results/baseline/qwen25_3b_512/config.json",
+    "results/dataset/v3/manual_review_v3.csv",
+    "results/dataset/v3/v3_audit_summary.json",
+    "results/dataset/v3/v3_scenario_counts.csv",
+    "results/judge/qwen25_7b_baseline_v2/config.json"
+  ],
+  "unchanged": [],
+  "backed_up": [],
+  "backup_directory": null
+}
