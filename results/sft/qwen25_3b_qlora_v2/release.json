@@ -1,0 +1,12 @@
+{
+  "repository": "Batyaoftheyear/plant-advisor",
+  "tag": "stage1-v2-checkpoint45",
+  "release_url": "https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v2-checkpoint45",
+  "archive_url": "https://github.com/Batyaoftheyear/plant-advisor/releases/download/stage1-v2-checkpoint45/plant_advisor_v2_checkpoint45.zip",
+  "archive_name": "plant_advisor_v2_checkpoint45.zip",
+  "archive_size": 114821503,
+  "archive_sha256": "71664b6eff523f7c821801f5a00ee1a31f6a4e565a3b879af9ccb762a3638a21",
+  "release_target_commit": "e824e28de29f99c9cd9156f7d84b87eca78e6b5d",
+  "asset_digest": "sha256:71664b6eff523f7c821801f5a00ee1a31f6a4e565a3b879af9ccb762a3638a21",
+  "public_download_verified": true
+}

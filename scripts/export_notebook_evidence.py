@@ -1,10 +1,11 @@
-"""Export saved display outputs; never reconstruct missing raw predictions or weights."""
+"""Export the saved notebook tables cited by the submitted PDF report."""
 from __future__ import annotations
 
 import base64
 import csv
 import hashlib
 import json
+import subprocess
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -53,8 +54,12 @@ class DisplayTables(HTMLParser):
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
     relative_source = "notebooks/03_training_and_evaluation_v3.ipynb"
-    source = root / relative_source
-    notebook = json.loads(source.read_text(encoding="utf-8"))
+    # The PDF cites this frozen notebook. The working notebook has a newer file identity.
+    source_commit = "1f455d2137c01664381e594a2d1949df45720af7"
+    source_bytes = subprocess.check_output(
+        ["git", "show", f"{source_commit}:{relative_source}"], cwd=root,
+    )
+    notebook = json.loads(source_bytes)
     sft = root / "results/sft/qwen25_3b_qlora_dataset_v3"
     evaluation = root / "results/evaluation/qlora_dataset_v3"
     sft.mkdir(parents=True, exist_ok=True)
@@ -113,9 +118,11 @@ def main() -> None:
     streams(23, "notebook_answer_examples.txt", evaluation)
     outputs = [o for c in notebook["cells"] for o in c.get("outputs", [])]
     manifest = {
-        "origin": "saved notebook outputs; not the missing original Drive files",
+        "origin": "saved notebook outputs cited by the submitted PDF",
         "source_notebook": relative_source,
-        "source_notebook_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+        "source_commit": source_commit,
+        "source_url": f"https://github.com/Batyaoftheyear/plant-advisor/blob/{source_commit}/{relative_source}",
+        "source_notebook_sha256": hashlib.sha256(source_bytes).hexdigest(),
         "output_payload_sha256": hashlib.sha256(json.dumps(outputs, ensure_ascii=False,
                                                             sort_keys=True).encode()).hexdigest(),
         "note": "CSV retains rendered display precision. Logs may be excerpts. No missing JSONL, judge explanations, or model weights were reconstructed.",

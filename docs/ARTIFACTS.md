@@ -1,33 +1,37 @@
 # Артефакты первого этапа
 
-## Опубликованный прогон v3
+## Код, данные и результаты
 
-Выполненный [ноутбук 04](../notebooks/04_reproduce_v3.ipynb), результаты в каталогах `*_v3_recovery` и полный архив относятся к одному запуску. Исходные ответы, оценки и файлы эксперимента сохранены без исправлений.
-
-| Материалы | Расположение |
+| Материал | Расположение |
 |---|---|
-| Данные SFT: 360 train / 40 validation, источники и манифест | [data/v3](../data/v3/) |
-| Аудит и форма ручного просмотра | [results/dataset/v3](../results/dataset/v3/) |
-| Исходные 30 ответов и два пробных случая | [baseline](../results/baseline/qwen25_3b_512/) |
-| Автоматическая проверка и примеры её срабатывания | [ноутбук 01](../notebooks/01_baseline_and_judge.ipynb), раздел 4 |
-| Все 30 ответов дообученной модели | [sft_answers.jsonl](../results/evaluation/qlora_dataset_v3_recovery/sft_answers.jsonl) |
-| 29 оценок baseline, 30 SFT, исходные попытки и ошибка q20 | [judge_b2a7a9c6e1084a42](../results/evaluation/qlora_dataset_v3_recovery/judge_b2a7a9c6e1084a42/) |
-| Парные оценки, агрегаты и график сравнения | [results/evaluation/qlora_dataset_v3_recovery](../results/evaluation/qlora_dataset_v3_recovery/) |
-| Примеры ухудшений с ответами и объяснениями судьи | [qualitative_examples.md](../results/evaluation/qlora_dataset_v3_recovery/qualitative_examples.md) |
-| Настройки, окружение, журнал, loss и выбранный checkpoint | [results/sft/qwen25_3b_qlora_dataset_v3_recovery](../results/sft/qwen25_3b_qlora_dataset_v3_recovery/) |
-| Веса safetensors, конфигурация и полный токенизатор | [GitHub Release](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v3-reproduction), ZIP и `SHA256SUMS.txt` |
-| Происхождение и контрольные суммы 45 файлов архива | [манифест](../results/reproduction_artifacts_manifest.json) |
-| Результаты проверки целостности и метрик | [reproduction_verification.json](../results/reproduction_verification.json) |
-| Адреса опубликованного архива и его SHA-256 | [reproduction_release.json](../results/reproduction_release.json) |
+| PDF-отчёт без изменений | [report_rk1.pdf](report_rk1.pdf) |
+| Исходная модель, два пробных вопроса и проверка формата | [ноутбук 01](../notebooks/01_baseline_and_judge.ipynb) |
+| 30 baseline-ответов, конфигурация и график | [results/baseline/qwen25_3b_512](../results/baseline/qwen25_3b_512/) |
+| Оценки baseline: 29 успешных, исходные попытки и ошибка q16 | [results/judge/qwen25_7b_baseline_v2](../results/judge/qwen25_7b_baseline_v2/) |
+| Пилот PlantClinic: исходные кандидаты, источники и ошибки генерации | [pilot_generation](../results/dataset/pilot_generation/) |
+| Данные v2 и анализ | [data](../data/), [ноутбук 02](../notebooks/02_dataset.ipynb) |
+| Итоговые данные v3: 360 train / 40 validation, метаданные, источники | [data/v3](../data/v3/) |
+| Аудит v3, 141 семейство сценариев, форма просмотра | [results/dataset/v3](../results/dataset/v3/), [ноутбук проверки](../notebooks/02_dataset_v3.ipynb) |
+| Сборка наборов | [build_sft_dataset.py](../scripts/build_sft_dataset.py), [build_sft_v3.py](../scripts/build_sft_v3.py) |
+| QLoRA v2: конфигурация, журнал до шага 135 и лучший checkpoint-45 | [results/sft/qwen25_3b_qlora_v2](../results/sft/qwen25_3b_qlora_v2/) |
+| QLoRA v3: выполненное обучение и оценка | [ноутбук 03](../notebooks/03_training_and_evaluation_v3.ipynb) |
+| QLoRA v3: конфигурация, loss, журнал и checkpoint | [results/sft/qwen25_3b_qlora_dataset_v3_recovery](../results/sft/qwen25_3b_qlora_dataset_v3_recovery/) |
+| 30 SFT-ответов, 29 оценок baseline и 30 SFT, исходные ответы судьи | [results/evaluation/qlora_dataset_v3_recovery](../results/evaluation/qlora_dataset_v3_recovery/) |
+| Примеры ухудшений с объяснениями судьи | [qualitative_examples.md](../results/evaluation/qlora_dataset_v3_recovery/qualitative_examples.md) |
+| Таблицы, графики и примеры, использованные в PDF | [оценка для отчёта](../results/evaluation/qlora_dataset_v3/), [обучение для отчёта](../results/sft/qwen25_3b_qlora_dataset_v3/) |
+| Сверка PDF и доступных файлов | [REPORT_ARTIFACT_CHECK.md](REPORT_ARTIFACT_CHECK.md) |
 
-В ZIP сохранена структура репозитория. Адаптер расположен в `results/sft/qwen25_3b_qlora_dataset_v3_recovery/adapter/adapter_model.safetensors`. Его размер — 119 801 528 байт; 504 тензора содержат 29 933 568 параметров. Веса и полный токенизатор распространяются через Releases из-за размера. [Скачивание и запуск](../README_DATASET.md).
+## Веса
 
-Проверены CRC архива, SHA-256 всех 45 файлов, структура safetensors, конечность значений, согласованность входных данных и конфигураций. Метрики пересчитаны из отдельных оценок. Все 59 успешных оценок сопоставлены с вопросами, ответами и исходными ответами судьи. Независимая загрузка адаптера на GPU при подготовке репозитория не выполнялась; фактическое обучение и оценка сохранены в ноутбуке 04.
+Веса, токенизаторы и конфигурации распространяются через GitHub Releases. После распаковки архивов сохраняются исходные пути внутри `results/sft/`. Ревизия базовой модели зафиксирована в `training_config.json`; инструкции загрузки — в [README_DATASET.md](../README_DATASET.md).
 
-## Предыдущие эксперименты
+- [Адаптер v3 и полный комплект результатов](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v3-reproduction). [Метаданные публикации](../results/reproduction_release.json), [манифест 45 файлов](../results/reproduction_artifacts_manifest.json), [проверка целостности](../results/reproduction_verification.json).
+- [Адаптер v2 checkpoint-45, токенизатор и журналы](https://github.com/Batyaoftheyear/plant-advisor/releases/tag/stage1-v2-checkpoint45). Оригиналы получены с Google Drive. [Метаданные публикации](../results/sft/qwen25_3b_qlora_v2/release.json), [происхождение и SHA-256](../results/sft/qwen25_3b_qlora_v2/drive_artifacts_manifest.json), [проверка](../results/sft/qwen25_3b_qlora_v2/verification.json).
 
-Данные v1/v2, [выполненный анализ v2](../notebooks/02_dataset.ipynb) и [первый прогон обучения v3](../notebooks/03_training_and_evaluation_v3.ipynb) сохранены. Первый отдельный судья находится в [results/judge/qwen25_7b_baseline_v2](../results/judge/qwen25_7b_baseline_v2/): 29 оценок, пропуск q16. Он отличается от судьи парного сравнения, где пропущен q20 baseline.
+У обоих адаптеров по 504 тензора F32 и 29 933 568 параметров. Проверены структура safetensors, конечность значений и хеши входных данных. Отдельная проверочная загрузка на GPU при подготовке репозитория не выполнялась.
 
-Веса первого обучения v3 не сохранились. Его таблицы, графики и текстовые выводы экспортированы скриптом `scripts/export_notebook_evidence.py`; [манифест экспорта](../results/notebook_evidence_manifest.json) содержит хеши исходного ноутбука, всех выводов и экспортированных файлов. CSV сохраняют точность отображения; журнал является выдержкой, примеры — выбранным поднабором.
+## Происхождение таблиц PDF
 
-Применимость SFT первого запуска равна 3,552, повторного опубликованного — 3,586. Числа разных запусков не объединяются. Все сохранённые выводы ноутбуков, включая предупреждения и ошибки интерактивных сеансов, оставлены без изменения.
+В PDF применимость SFT равна 3,552, а в полном опубликованном наборе оценок — 3,586. Эти результаты не объединяются. Таблицы PDF извлечены из сохранённых выводов; они имеют точность отображения исходного ноутбука. Их происхождение, SHA-256 и ссылка на зафиксированную версию ноутбука указаны в [манифесте экспорта](../results/notebook_evidence_manifest.json).
+
+Скрипт `scripts/export_notebook_evidence.py` читает эту версию из Git, поэтому переименование рабочего ноутбука не меняет происхождение таблиц. Полные JSONL и адаптер именно для оценки 3,552 отсутствуют. Наличие другого адаптера v3 не устраняет это ограничение.
